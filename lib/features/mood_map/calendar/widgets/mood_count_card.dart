@@ -184,7 +184,7 @@ class _MoodCountCardState extends State<MoodCountCard> {
           borderRadius: BorderRadius.circular(24),
           boxShadow: [
             BoxShadow(
-              color: settings.isDarkMode ? Colors.black26 : Colors.black12.withOpacity(0.07),
+              color: settings.isDarkMode ? Colors.black26 : Colors.black12.withAlpha(18),
               blurRadius: 12,
               offset: const Offset(0, 4),
             ),

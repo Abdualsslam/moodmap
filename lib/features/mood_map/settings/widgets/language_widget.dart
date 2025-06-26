@@ -56,7 +56,7 @@ class LanguageWidget extends StatelessWidget {
       decoration: BoxDecoration(
         color: isDark ? const Color(0xFF1A2233) : Colors.white,
         borderRadius: BorderRadius.circular(16),
-        boxShadow: [BoxShadow(color: isDark ? Colors.black.withOpacity(0.15) : Colors.black12, blurRadius: 8, offset: const Offset(0, 3))],
+        boxShadow: [BoxShadow(color: isDark ? Colors.black.withAlpha(38) : Colors.black12, blurRadius: 8, offset: const Offset(0, 3))],
       ),
       child: Row(
         children: [

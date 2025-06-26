@@ -270,11 +270,7 @@ class _MoodMonthViewState extends State<MoodMonthView> {
         color: isDark ? Color(0xFF232c3b) : Colors.white,
         borderRadius: BorderRadius.circular(24),
         boxShadow: [
-          BoxShadow(
-            color: isDark ? Colors.black.withOpacity(0.21) : Colors.black12.withOpacity(0.07),
-            blurRadius: 12,
-            offset: const Offset(0, 4),
-          ),
+          BoxShadow(color: isDark ? Colors.black.withAlpha(54) : Colors.black12.withAlpha(18), blurRadius: 12, offset: const Offset(0, 4)),
         ],
       ),
       child: Column(
@@ -338,7 +334,7 @@ class _MoodMonthViewState extends State<MoodMonthView> {
                       ? (isDark ? Colors.grey[900] : MoodColors.awfulLight)
                       : (matchesFilter
                           ? provider.getMoodColorForDay(isDark, day, _displayedMonth, _displayedYear)
-                          : (isDark ? Colors.grey[800]!.withOpacity(0.10) : Colors.grey.withOpacity(0.14)));
+                          : (isDark ? Colors.grey[800]!.withAlpha(25) : Colors.grey.withAlpha(36)));
 
               final bool isToday = today.year == _displayedYear && today.month == _displayedMonth && today.day == day;
 

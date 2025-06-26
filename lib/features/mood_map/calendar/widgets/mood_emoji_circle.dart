@@ -50,7 +50,7 @@ class MoodEmojiCircle extends StatelessWidget {
     final bgColor = isSelected ? color : (isDark ? Colors.grey[850] : Colors.grey[100]);
 
     // لون إطار الدائرة حسب الحالة
-    final borderColor = isSelected ? color.withOpacity(isDark ? 0.55 : 0.75) : (isDark ? Colors.grey[700]! : Colors.grey[300]!);
+    final borderColor = isSelected ? color.withAlpha(isDark ? 140 : 191) : (isDark ? Colors.grey[700]! : Colors.grey[300]!);
 
     return Container(
       width: isCenter ? 84 : 64,
@@ -60,7 +60,7 @@ class MoodEmojiCircle extends StatelessWidget {
         border: Border.all(color: borderColor, width: isSelected ? 3.4 : 1.1),
         boxShadow:
             shadow && isSelected
-                ? [BoxShadow(color: color.withOpacity(isDark ? 0.22 : 0.19), blurRadius: 24, offset: const Offset(0, 6), spreadRadius: 2)]
+                ? [BoxShadow(color: color.withAlpha(isDark ? 56 : 48), blurRadius: 24, offset: const Offset(0, 6), spreadRadius: 2)]
                 : [],
         shape: BoxShape.circle,
       ),

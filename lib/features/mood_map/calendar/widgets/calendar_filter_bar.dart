@@ -104,9 +104,7 @@ class CalendarFilterBar extends StatelessWidget {
       decoration: BoxDecoration(
         color: cardColor,
         borderRadius: BorderRadius.circular(12),
-        boxShadow: [
-          BoxShadow(color: isDark ? Colors.black45 : Colors.black12.withOpacity(0.06), blurRadius: 8, offset: const Offset(0, 2)),
-        ],
+        boxShadow: [BoxShadow(color: isDark ? Colors.black45 : Colors.black12.withAlpha(15), blurRadius: 8, offset: const Offset(0, 2))],
       ),
       child: Row(
         children: [

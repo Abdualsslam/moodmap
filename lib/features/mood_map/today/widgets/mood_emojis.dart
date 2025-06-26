@@ -37,12 +37,12 @@ class MoodEmojis extends StatelessWidget {
               width: isSelected ? 70 : 60,
               height: isSelected ? 70 : 60,
               decoration: BoxDecoration(
-                color: isSelected ? _moodColor(mood).withOpacity(0.18) : Colors.transparent,
+                color: isSelected ? _moodColor(mood).withAlpha(46) : Colors.transparent,
                 border: Border.all(color: isSelected ? _moodColor(mood) : Colors.transparent, width: isSelected ? 3 : 1.5),
                 borderRadius: BorderRadius.circular(45),
                 boxShadow: [
                   BoxShadow(
-                    color: isSelected ? _moodColor(mood).withOpacity(0.20) : Colors.transparent,
+                    color: isSelected ? _moodColor(mood).withAlpha(51) : Colors.transparent,
                     blurRadius: isSelected ? 15 : 0,
                     spreadRadius: isSelected ? 1 : 0,
                     offset: isSelected ? Offset(0, 8) : Offset(0, 0),

@@ -28,7 +28,7 @@ import 'package:mood_map/core/enums/enum.dart';
 //                         clipBehavior: Clip.none,
 //                         children: [
 //                           CircleAvatar(
-//                             backgroundColor: color.withOpacity(0.23),
+//                             backgroundColor: color.withAlpha(59),
 //                             radius: 28,
 //                             child: Image.asset(m['icon'] as String, width: 48, height: 48, fit: BoxFit.contain),
 //                           ),
@@ -98,7 +98,7 @@ class EmojisBarCounter extends StatelessWidget {
                         clipBehavior: Clip.none,
                         children: [
                           CircleAvatar(
-                            backgroundColor: color.withOpacity(0.23),
+                            backgroundColor: color.withAlpha(59),
                             radius: 28,
                             child: Image.asset(m['icon'] as String, width: 48, height: 48, fit: BoxFit.contain),
                           ),

@@ -49,7 +49,7 @@ class ThemeWidget extends StatelessWidget {
       decoration: BoxDecoration(
         color: isDark ? const Color(0xFF1A2233) : Colors.white,
         borderRadius: BorderRadius.circular(16),
-        boxShadow: [BoxShadow(color: isDark ? Colors.black.withOpacity(0.13) : Colors.black12, blurRadius: 8, offset: const Offset(0, 3))],
+        boxShadow: [BoxShadow(color: isDark ? Colors.black.withAlpha(33) : Colors.black12, blurRadius: 8, offset: const Offset(0, 3))],
       ),
       child: Row(
         children: [

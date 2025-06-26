@@ -111,9 +111,7 @@ class FavoriteQuoteCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: isDark ? const Color(0xFF23283A) : Colors.white,
           borderRadius: BorderRadius.circular(24),
-          boxShadow: [
-            BoxShadow(color: isDark ? Colors.black54.withOpacity(0.09) : Colors.black12, blurRadius: 10, offset: const Offset(0, 3)),
-          ],
+          boxShadow: [BoxShadow(color: isDark ? Colors.black54.withAlpha(23) : Colors.black12, blurRadius: 10, offset: const Offset(0, 3))],
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

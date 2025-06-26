@@ -113,7 +113,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
                   curve: Curves.easeOut,
                   padding: const EdgeInsets.symmetric(vertical: 8),
                   decoration: BoxDecoration(
-                    color: isSelected ? (isDark ? Colors.white10 : Colors.blue.withOpacity(0.11)) : Colors.transparent,
+                    color: isSelected ? (isDark ? Colors.white10 : Colors.blue.withAlpha(28)) : Colors.transparent,
                     borderRadius: BorderRadius.circular(22),
                   ),
                   child: Column(

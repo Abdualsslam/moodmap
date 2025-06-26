@@ -86,7 +86,7 @@ import 'package:provider/provider.dart';
 //               final isFuture = dateOnly.isAfter(todayDateOnly);
 //               final isDisabled = isFuture || isFiltered;
 //               final color =
-//                   isDisabled ? Colors.grey.withOpacity(0.14) : provider.getMoodColorForDay(isDark, date.day, date.month, date.year);
+//                   isDisabled ? Colors.grey.withAlpha(36) : provider.getMoodColorForDay(isDark, date.day, date.month, date.year);
 //               final isToday = dateOnly == todayDateOnly;
 
 //               return Expanded(
@@ -184,7 +184,7 @@ class _MoodWeekViewState extends State<MoodWeekView> {
     // الألوان حسب الثيم
     final backgroundColor = isDark ? const Color(0xFF222C36) : Colors.white;
     final dayTextColor = isDark ? Colors.white : Colors.black;
-    final disabledColor = isDark ? Colors.grey[700]!.withOpacity(0.14) : Colors.grey.withOpacity(0.14);
+    final disabledColor = isDark ? Colors.grey[700]!.withAlpha(36) : Colors.grey.withAlpha(36);
     final disabledTextColor = isDark ? Colors.grey[500] : Colors.grey[400];
 
     return Container(
@@ -192,9 +192,7 @@ class _MoodWeekViewState extends State<MoodWeekView> {
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(18),
-        boxShadow: [
-          BoxShadow(color: isDark ? Colors.black26 : Colors.black12.withOpacity(0.08), blurRadius: 10, offset: const Offset(0, 4)),
-        ],
+        boxShadow: [BoxShadow(color: isDark ? Colors.black26 : Colors.black12.withAlpha(20), blurRadius: 10, offset: const Offset(0, 4))],
       ),
       child: Column(
         children: [
